@@ -1,0 +1,34 @@
+{
+    "name": "scandipwa/logger",
+    "version": "1.0.0-dev",
+    "type": "hernja",
+    "description": "ScandiPWA bootstrap module",
+    "keywords": [
+        "magento2",
+        "logger",
+        "utility",
+        "scandipwa",
+        "pwa"
+    ],
+    "license": [
+        "OSL-3.0"
+    ],
+    "support": {
+        "email": "info@scandiweb.com"
+    },
+    "authors": [
+        {
+            "name": "Ilja Lapkovskis",
+            "email": "ilja@scandiweb.com"
+        }
+    ],
+    "require": {
+        "magento/magento2-base": "^2.3",
+        "scandipwa/logger-installer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ScandiPWA\\Logger\\" : "src"
+        }
+    }
+}
