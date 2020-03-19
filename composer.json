@@ -1,7 +1,6 @@
 {
     "name": "scandipwa/logger",
-    "version": "1.0.0-dev",
-    "type": "hernja",
+    "type": "scandipwa-logger",
     "description": "ScandiPWA bootstrap module",
     "keywords": [
         "magento2",
@@ -24,9 +23,12 @@
     ],
     "require": {
         "magento/magento2-base": "^2.3",
-        "scandipwa/logger-installer": "*"
+        "scandipwa/logger-installer": "^1.0"
     },
     "autoload": {
+        "files": [
+            "src/registration.php"
+        ],
         "psr-4": {
             "ScandiPWA\\Logger\\" : "src"
         }
