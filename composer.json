@@ -1,7 +1,7 @@
 {
     "name": "scandipwa/logger",
-    "type": "scandipwa-logger",
-    "description": "ScandiPWA bootstrap module",
+    "type": "magento2-module",
+    "description": "ScandiPWA logger",
     "keywords": [
         "magento2",
         "logger",
@@ -19,11 +19,14 @@
         {
             "name": "Ilja Lapkovskis",
             "email": "ilja@scandiweb.com"
+        },
+        {
+            "name": "Ricards RIkmanis",
+            "email": "ricards@scandiweb.com"
         }
     ],
     "require": {
-        "magento/magento2-base": "^2.3",
-        "scandipwa/logger-installer": "^1.0"
+        "magento/magento2-base": "^2.3"
     },
     "autoload": {
         "files": [

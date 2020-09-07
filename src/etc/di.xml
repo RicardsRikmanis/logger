@@ -3,11 +3,22 @@
  * @category ScandiPWA
  * @package ScandiPWA\Logger
  * @author Ilja Lapkovskis <info@scandiweb.com / ilja@scandiweb.com>
+ * @author Ricards Rikmanis <info@scandiweb.com / ricards@scandiweb.com>
  * @copyright Copyright (c) 2020 Scandiweb, Ltd (http://scandiweb.com)
  * @license OSL-3.0
 -->
 
-<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="Magento\Framework\Logger\Monolog" type="ScandiPWA\Logger\Cloud"/>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <virtualType name="stderrHandler" type="Monolog\Handler\StreamHandler">
+        <arguments>
+            <argument name="stream" xsi:type="string">php://stderr</argument>
+        </arguments>
+    </virtualType>
+    <type name="Magento\Framework\Logger\Monolog">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="stderr" xsi:type="object">stderrHandler</item>
+            </argument>
+        </arguments>
+    </type>
 </config>

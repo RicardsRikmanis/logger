@@ -5,6 +5,7 @@
  * @category    ScandiPWA
  * @package     ScandiPWA_Logger
  * @author      Ilja Lapkovskis <ilja@scandiweb.com | info@scandiweb.com>
+ * @author      Ricards Rikmanis <ricards@scandiweb.com | info@scandiweb.com>
  * @copyright   Copyright (c) 2020 Scandiweb, Ltd (https://scandiweb.com)
  * @license     OSL-3.0
  */
